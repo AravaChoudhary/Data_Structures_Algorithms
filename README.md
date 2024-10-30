@@ -5,12 +5,11 @@ Welcome to my Data Structures and Algorithms (DSA) repository! This repository c
 ## Current Progress
 ### Arrays
 I am currently focusing on Array-related problems. Below is a list of problems I have solved so far:
-- Two Sum : Find two numbers in an array that add up to a specific target.
-- Three Sum : Find three numbers in an array that add up to a specific target.
+- Key Pair : Find two numbers in an array that add up to a specific target.
+- Finding Pivot Index: Find an index in an array where the sum of the numbers on the left is equal to the sum of the numbers on the right.
 - Shift Array : Shift elements in an array to the left or right by a given number of steps.
-- Single Number : Find the single element that appears only once in an array, where every other element appears twice.
-- Sort 0s and 1s : Sort an array consisting only of 0s and 1s.
-
+- Missing Number : Find the missing number in a sequence of integers from 1 to n.
+- Sort 0s and 1s : Sort an array consisting only of 0s and 1s. 
 
 ## Learning Resource
 

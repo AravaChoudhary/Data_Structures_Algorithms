@@ -3,12 +3,8 @@ using namespace std;
 
 int main()
 {
-    int age;
-    cout<<"Enter your Age : ";
-    cin>>age;
-
-    cout<<"Your Age is : ";
-    cout<<age<<endl;
+    int arr[100];
+    cout<<arr[0];
 
     return 0;
 }

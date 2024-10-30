@@ -28,7 +28,30 @@ double bruteforce(int arr[] , int n , int k)
 
 double optimized(int arr[] , int n , int k)
 {
+     // Double Sliding Window Method
+    int sum = 0;
+    int i = 0 , j = k - 1;
 
+    for(int y = i; y <= j; y++)
+    {
+        sum = sum + arr[y]; 
+    }
+
+    int maxSum = sum;
+    j++; 
+
+    //here if j goes out of bound then while loop will not run
+    while(j < n)
+    {
+        sum = sum - arr[i];
+        sum = sum + arr[j];
+        i++;
+        j++;
+        maxSum = max(maxSum , sum);
+    }
+ 
+    double maxAvg = (double)maxSum / k;
+    return maxAvg;
 }
 
 int main()

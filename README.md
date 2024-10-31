@@ -3,6 +3,7 @@
 Welcome to my Data Structures and Algorithms (DSA) repository! This repository contains my journey through learning Data Structures and Algorithms (DSA). I aim to build strong foundations in DSA by practicing various problems and sharing solutions here. This collection includes solutions to various DSA problems along with implementations of fundamental data structures and algorithms in C++ programming language. This repository aims to showcase my journey in mastering DSA concepts and solving common problems.
 
 ## Current Progress
+Focusing on solving LeetCode Problems to get more practice and Problem Solving Approach.
 ### Arrays
 I am currently focusing on Array-related problems. Below is a list of problems I have solved so far:
 - Key Pair : Find two numbers in an array that add up to a specific target.

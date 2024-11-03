@@ -6,7 +6,7 @@ Welcome to my Data Structures and Algorithms (DSA) repository! This repository c
 Focusing on solving LeetCode Problems to get more practice and Problem Solving Approach.
 ### Arrays
 I am currently focusing on Array-related problems. Below is a list of problems I have solved so far:
-Key Pair: Find two numbers in an array that add up to a specific target.
+    •   Key Pair: Find two numbers in an array that add up to a specific target.
 	•	Finding Pivot Index: Locate an index in an array where the sum of the numbers on the left equals the sum on the right.
 	•	Shift Array: Shift elements in an array to the left or right by a specified number of steps.
 	•	Missing Number: Find the missing number in a sequence of integers from 1 to n.

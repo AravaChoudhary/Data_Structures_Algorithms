@@ -9,7 +9,7 @@ void Double(int a)
     cout<<2 * a<<" ";
 }
 
-bool checkEven(int a)
+bool CheckEven(int a)
 {
     return a % 2 == 0;
 }
@@ -33,7 +33,7 @@ int main()
     cout<<*it<<endl;
 
     cout<<"Find if : ";
-    auto itr = find_if(arr.begin(),arr.end(),checkEven);
+    auto itr = find_if(arr.begin(),arr.end(),CheckEven);
     cout<<*itr<<endl;
 
     cout<<"Count : ";
@@ -42,7 +42,7 @@ int main()
     cout<<ans<<endl;
 
     cout<<"Count if : ";
-    int ans2 = count_if(arr.begin(),arr.end(),checkEven);
+    int ans2 = count_if(arr.begin(),arr.end(),CheckEven);
     cout<<ans2<<endl;
 
     cout<<"Sort : ";
@@ -72,7 +72,7 @@ int main()
     }
 
     cout<<"\nPartition : ";
-    auto itp = partition(arr.begin(),arr.end(),checkEven);
+    auto itp = partition(arr.begin(),arr.end(),CheckEven);
     for(int i : arr) {
         cout<<i<<" ";
     } cout<<endl;

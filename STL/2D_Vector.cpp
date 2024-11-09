@@ -9,7 +9,7 @@ int main()
     vector<vector<int> > arr(5 ,vector<int>(4,0));
     int totalRows = arr.size();
     int totalColumns = arr[0].size();
-
+    
     // Jaggered 2D Vector
     vector<vector<int> > brr(4); // No. of Rows = 4
     brr[0] = vector<int> (4);

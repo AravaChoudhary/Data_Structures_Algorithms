@@ -47,7 +47,7 @@ int main()
     }
 
     dq.insert(dq.begin(),101);
-
+    
     // Iterating the Deque
     cout<<"\nIterating the Deque"<<endl;
     deque<int>::iterator it = dq.begin();

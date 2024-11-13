@@ -52,6 +52,9 @@
         "vector": "cpp",
         "algorithm": "cpp",
         "forward_list": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "__tree": "cpp",
+        "map": "cpp",
+        "set": "cpp"
     }
 }

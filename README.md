@@ -1,12 +1,17 @@
 # Data Structures and Algorithms (DSA)
 
-Welcome to my Data Structures and Algorithms (DSA) repository! This repository contains my journey through learning Data Structures and Algorithms (DSA). I aim to build strong foundations in DSA by practicing various problems and sharing solutions here. This collection includes solutions to various DSA problems along with implementations of fundamental data structures and algorithms in C++ programming language. This repository aims to showcase my journey in mastering DSA concepts and solving common problems.
+Welcome to my Data Structures and Algorithms (DSA) repository! This repository is a reflection of my journey to master DSA concepts and problem-solving skills. It contains:
 
-## Current Progress
+	•	Solutions to various DSA problems
+	•	Implementations of core data structures and algorithms
+	•	Code written primarily in C++
+
+My goal is to develop strong foundations in DSA by practicing and sharing solutions while continuously improving my problem-solving approach.
+
+## 🚀 Current Progress
 I am currently focusing on solving LeetCode Problems to practice and refine my problem-solving skills.
 
 Topics Under Progress:
-
 ### Searching
 	•	Linear Search
 	•	Binary Search
@@ -15,10 +20,10 @@ Topics Under Progress:
 
 
 ## ✅ Topics Done
-    Time & Space Complexity
-    Arrays
-    Array Related LeetCode Problems
-    STL (Standard Template Library)
+    •	Time & Space Complexity
+    •	Arrays
+    •	Array Related LeetCode Problems
+    •	STL (Standard Template Library)
 
 
 ## 📚 Learning Resource

@@ -4,16 +4,15 @@ Welcome to my Data Structures and Algorithms (DSA) repository! This repository c
 
 ## Current Progress
 Focusing on solving LeetCode Problems to get more practice and Problem Solving Approach.
-### STL (Standard Template Library)
-    Containers : Vector, List, Queue, Stack, Set, Map
-    Algorithms : sort(), binary_search(), reverse()
-    Iterators
-    Functors
+### Searching
+    Linear and Binary Search
+    LeetCode Problems
 
 ## Topics Done
     Time & Space Complexity
     Arrays
     Array Related LeetCode Problems
+    STL (Standard Template Library)
 
 
 ## Learning Resource

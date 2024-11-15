@@ -8,9 +8,10 @@ int BinarySearch(vector<int>& nums , int target)
     int n = nums.size();
     int s = 0;
     int l = n - 1;
-    int mid = (s + l) / 2;
+    // int mid = (s + l) / 2; 
 
     while(s <= l) {
+        int mid = s + (l - s) / 2; // this should be used
         if(nums[mid] == target) {
             return mid;
         }
@@ -20,7 +21,6 @@ int BinarySearch(vector<int>& nums , int target)
         else {
             s = mid + 1;
         }
-        mid = (s + l) / 2;
     }
     return -1;
 }

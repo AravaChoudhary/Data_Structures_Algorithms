@@ -58,13 +58,17 @@ int main()
     int arr[] = {10,20,20,20,30,40,50,60,70,70,80,90};
     int n = 11;
     int target = 20;
-    int ansIdx = -1; // -1 means target not found
+    int firstIdx = -1; // -1 means target not found
+    int lastIdx = -1;
 
-    first_occurence(arr,n,target,ansIdx);
-    cout<<"First Occurence Index : "<<ansIdx<<endl;
+    first_occurence(arr,n,target,firstIdx);
+    cout<<"First Occurence Index : "<<firstIdx<<endl;
 
-    last_occurence(arr,n,target,ansIdx);
-    cout<<"Last Occurence Index : "<<ansIdx<<endl;
+    last_occurence(arr,n,target,lastIdx);
+    cout<<"Last Occurence Index : "<<lastIdx<<endl;
+
+    int total_occurence = lastIdx - firstIdx + 1;
+    cout<<"Total Occurence : "<<total_occurence<<endl;
 
     return 0;
 }

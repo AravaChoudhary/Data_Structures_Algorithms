@@ -38,6 +38,28 @@ int optimized(vector<int> arr , int n) {
     return s;
 }
 
+int Store_and_Compute(vector<int>& arr , int n) {
+
+    int s = 0;
+    int l = n - 1;
+    int mid;
+    int ans_idx = -1;
+
+    while(s <= l) {
+        mid = s + (l - s) / 2;
+
+        // Moving Towards --> Right 
+        if(arr[mid] < arr[mid + 1]) {
+            s = mid + 1; 
+        } else { 
+            ans_idx = mid; // Storing the Answer
+            l = mid - 1;
+        }
+    }
+
+    return ans_idx;
+}
+
 int main()
 {
     vector<int> arr;
@@ -53,8 +75,9 @@ int main()
         arr.push_back(value);
     }
 
-    cout<<"Brute Force Approach : \nPeak Element Index is : "<<bruteforce(arr,n)<<endl;
-    cout<<"\nOptimized Approach : \nPeak Element Index is : "<<optimized(arr,n)<<endl;
+    cout<<"Brute Force Approach\nPeak Element Index is : "<<bruteforce(arr,n)<<endl;
+    cout<<"\nOptimized Approach\nPeak Element Index is : "<<optimized(arr,n)<<endl;
+    cout<<"\nStore & Compute Approach\nPeak Element Index is : "<<Store_and_Compute(arr,n)<<endl;
 
     return 0;
 }

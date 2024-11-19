@@ -32,4 +32,4 @@ I am following the book [Grokking Algorithms: An Illustrated Guide for Programme
 # Competitive Coding Profiles
 
 ### 📊 Leetcode Profile :  [LeetCode - Aranika4518](https://leetcode.com/u/Aranika4518/)
-### 📊 GFG Profile : [GeeksforGeeks - 160 Days of Problem Solving](https://www.geeksforgeeks.org/user/aravachoudhary/)
+### 🧑🏻‍💻 GFG Profile : [GeeksforGeeks - 160 Days of Problem Solving](https://www.geeksforgeeks.org/user/aravachoudhary/)

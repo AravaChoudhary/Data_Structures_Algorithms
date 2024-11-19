@@ -46,7 +46,7 @@ int main()
     cout<<"Enter the Array Size : ";
     cin>>n;
     
-    cout<<"Enter the Array Elements : "<<endl;
+    cout<<"Enter Array Elements : "<<endl;
     for(int i = 0; i < n; i++) {
         int value;
         cin>>value;

@@ -29,4 +29,4 @@ Topics Under Progress:
 I am following the book [Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People](https://www.manning.com/books/grokking-algorithms) by Aditya Bhargava, which provides a visual and approachable way to understand algorithms. This book has been instrumental in building my foundational knowledge.
 
 ## 📊 Leetcode Profile : 
-https://leetcode.com/u/Aranika4518/
+[LeetCode - Aranika4518](https://leetcode.com/u/Aranika4518/)

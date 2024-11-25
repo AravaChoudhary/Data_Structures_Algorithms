@@ -14,7 +14,31 @@ bool LinearSearch(int arr[][4] , int row , int col , int target) {
 }
 
 bool BinarySearch(int arr[][4] , int row , int col , int target) {
-    
+    int n = row * col; // Total Elements
+    int s = 0;
+    int l = n - 1;
+
+    while(s <= l) {
+        int mid = s + (l - s) / 2;
+
+        // Finding row & col Index of 2D Array using mid
+        int rowIndex = mid / col;
+        int colIndex = mid % col;
+
+        if(arr[rowIndex][colIndex] == target) {
+            return true;
+        }
+
+        else if(arr[rowIndex][colIndex] < target) {
+            s = mid + 1;
+        }
+
+        else {
+            l = mid - 1;
+        }
+    }
+
+    return false;
 }
 
 int main()
@@ -27,7 +51,7 @@ int main()
 
     int row = 3;
     int col = 4;
-    int target = 442;
+    int target = 44;
 
     cout<<"\nLinear Search"<<endl;
     bool ansLinear = LinearSearch(arr,row,col,target);

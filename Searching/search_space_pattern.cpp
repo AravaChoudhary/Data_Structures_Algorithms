@@ -3,7 +3,8 @@
 using namespace std;
 
 int Sqrt_with_0_precision(int x) {
-        
+
+    // Time Complexity --> O(log n)
     int s = 0;
     int l = x;
     int ans = -1;
@@ -31,6 +32,9 @@ int Sqrt_with_0_precision(int x) {
 }
 
 double Sqrt_with_more_digit_precision(int x) {
+
+    // Time Complexity --> O(log n) + O(Precision)
+
     int s = 0;
     int l = x;
     int ans = -1;

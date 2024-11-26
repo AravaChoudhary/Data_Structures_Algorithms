@@ -30,7 +30,7 @@ int Sqrt_with_0_precision(int x) {
     return ans;
 }
 
-double Sqrt_with_two_digit_precision(int x) {
+double Sqrt_with_more_digit_precision(int x) {
     int s = 0;
     int l = x;
     int ans = -1;
@@ -58,33 +58,19 @@ double Sqrt_with_two_digit_precision(int x) {
     cout<<"\nEnter the Precision upto how many digits : ";
     cin>>precision;
 
-    double factor = 1;
-    cout<<"First : "<<sqrtAns<<endl;
-    double finalAns = sqrtAns;
+    double step = 0.1;
+    
+    while(precision--) {
+        double j = sqrtAns;
 
-    for(int i = 0; i < precision; i++) {
-
-        factor = factor / 10.0;
-        cout<<"Factor : "<<factor<<endl;
-
-
-        for(int y = 0; y < 10; y++) {
-
-            double toAdd = y * factor;
-            cout<<"toAdd : "<<toAdd<<endl;
-
-
-            if(sqrtAns + toAdd < x) {
-                finalAns = sqrtAns + toAdd;
-                cout<<"sqrtAns Updated to : "<<finalAns; // Store & Compute
-                break;
-            } else {
-                break;
-            }
-        }
+        while(j * j <= x) {
+            sqrtAns = j; // Store & Compute
+            j = step + j; // j -> 7.1
+        } 
+        // After this while loop , I have got one precision answer
+        step = step / 10;
     }
-
-    return finalAns;
+    return sqrtAns;
 }
 
 
@@ -96,7 +82,7 @@ int main()
     cin>>n;
 
     cout<<"Square root with 0 Precision is : "<<Sqrt_with_0_precision(n)<<endl;
-    cout<<"Accurate Square root : "<<Sqrt_with_two_digit_precision(n)<<endl;
+    cout<<"\nAccurate Square root : "<<Sqrt_with_more_digit_precision(n)<<endl;
     
     return 0;
 }

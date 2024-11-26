@@ -77,12 +77,18 @@ double Sqrt_with_more_digit_precision(int x) {
 int main()
 {
     int n;
-    cout<<"Search Space Pattern\n"<<endl;
+    cout<<"\nSearch Space Pattern\n"<<endl;
     cout<<"Enter the Number : ";
     cin>>n;
 
     cout<<"Square root with 0 Precision is : "<<Sqrt_with_0_precision(n)<<endl;
     cout<<"\nAccurate Square root : "<<Sqrt_with_more_digit_precision(n)<<endl;
+
+    // here for printing more than 6 pricision , we have to use printf()
+    double ans = Sqrt_with_more_digit_precision(n);
+    printf("Using Printf");
+    printf("\nAnswer is : %.13f",ans);
+    cout<<endl;
     
     return 0;
 }

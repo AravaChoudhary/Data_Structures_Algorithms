@@ -77,6 +77,31 @@ double Sqrt_with_more_digit_precision(int x) {
     return sqrtAns;
 }
 
+double BinarySearchPrecision(int x) {
+
+    double s = 0;
+    double l = x;
+    double ans = 0;
+
+    while((l - s) > 0.0000000000001) {
+        double mid = s + (l - s) / 2;
+        double product = mid * mid;
+
+        if(product == x) {
+            return mid;
+        }
+        else if(product < x) {
+            ans = mid;
+            s = mid;
+        }
+        else {
+            l = mid;
+        }
+    }
+
+    return ans;
+}
+
 
 int main()
 {
@@ -92,8 +117,14 @@ int main()
     double ans = Sqrt_with_more_digit_precision(n);
     printf("Using Printf");
     printf("\nAnswer is : %.13f",ans);
-    cout<<endl;
     
+
+    ans = BinarySearchPrecision(n);
+    printf("\n\nBinary Search Precision");
+    printf("\nSquare Root is : %.13f",ans);
+
+    cout<<endl;
+
     return 0;
 }
 

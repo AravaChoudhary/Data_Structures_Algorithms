@@ -17,6 +17,7 @@ Topics Under Progress:
 	•	Linear Search
 	•	Binary Search
 	•	LeetCode Problems
+    •	GfG Problems
 
 
 ## ✅ Topics Done

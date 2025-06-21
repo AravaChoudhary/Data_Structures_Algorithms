@@ -33,5 +33,5 @@ I am following the book [Grokking Algorithms: An Illustrated Guide for Programme
 
 # 💻 Competitive Coding Profiles
 
-### 📊 Leetcode Profile :  [LeetCode - Aranika4518](https://leetcode.com/u/AravaChoudhary/)
+### 📊 Leetcode Profile :  [LeetCode - AravaChoudhary](https://leetcode.com/u/AravaChoudhary/)
 ### 🧑🏻‍💻 GFG Profile : [GeeksforGeeks - 160 Days of Problem Solving](https://www.geeksforgeeks.org/user/aravachoudhary/)

@@ -3,8 +3,10 @@
 using namespace std;
 
 int main() {
+
     cout<<"DSA Restart";
-    cout<<"Numeric Hollow Half Pyramid\n";
+    cout<<"Hollow Half Pyramid\n";
+
     int n;
     cout<<"Enter the Value of n : ";
     cin>>n;
@@ -15,6 +17,21 @@ int main() {
         {
             if(j == 0 or j == i or i == n - 1)
                 cout<<j + 1;
+            else
+                cout<<" ";
+        }
+        cout<<endl;
+    }
+
+
+    cout<<"Inverted Hollow Half Pyramid\n";
+
+    for(int i = 0; i < n; i++)
+    {
+        for(int j = i + 1; j <= n; j++)
+        {
+            if(i == 0 or j == i + 1 or j == n)
+                cout<<j;
             else
                 cout<<" ";
         }

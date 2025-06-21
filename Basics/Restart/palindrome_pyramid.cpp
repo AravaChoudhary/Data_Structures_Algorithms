@@ -15,22 +15,22 @@ int main() {
 
         for(int j = 0; j < n + i; j++)
         {
-            if(j < n - i - 1)
+            if(j < n - i - 1)    //Spaces Printing
                 cout<<" ";
 
-            else if(j <= n - 1)
+            else if(j <= n - 1)  // printing till n - 1
             {    cout<<c;
                 c++;
             }
             
-            else if(j == n)
+            else if(j == n)  // Now decrementing after j equals n
             {
                 c = c - 2;
                 cout<<c;
                 c--;
             }
 
-            else 
+            else   
             {
                 cout<<c;
                 c--;

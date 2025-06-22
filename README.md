@@ -36,7 +36,10 @@ I am following the book [Grokking Algorithms: An Illustrated Guide for Programme
 
 ### 📊 Leetcode Profile :  
 
+[LeetCode - AravaChoudhary](https://leetcode.com/u/AravaChoudhary/)
+
 [LeetCode - AravaChoudhary](https://leetcard.jacoblin.cool/AravaChoudhary?theme=dark&font=Nunito&ext=heatmap)
+
 
 
 ### 🧑🏻‍💻 GFG Profile : [GeeksforGeeks - 160 Days of Problem Solving](https://www.geeksforgeeks.org/user/aravachoudhary/)

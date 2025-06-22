@@ -34,7 +34,7 @@ I am following the book [Grokking Algorithms: An Illustrated Guide for Programme
 
 # 💻 Competitive Coding Profiles
 
-(https://leetcard.jacoblin.cool/AravaChoudhary?theme=dark&font=Nunito&ext=heatmap)
+[📊 LeetCode - AravaChoudhary](https://leetcard.jacoblin.cool/AravaChoudhary?theme=dark&font=Nunito&ext=heatmap)
 
 
 ### 🧑🏻‍💻 GFG Profile : [GeeksforGeeks - 160 Days of Problem Solving](https://www.geeksforgeeks.org/user/aravachoudhary/)

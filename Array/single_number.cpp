@@ -7,7 +7,7 @@ int FindUniqueNumber(int arr[] , int n)
 {
     int ans = 0;
 
-    for(int i = 0;i<n;i++)
+    for(int i = 0; i < n; i++)
     {
         ans = ans ^ arr[i];
     }
@@ -24,3 +24,5 @@ int main()
     int ans = FindUniqueNumber(arr,size);
     cout<<"Unique Number is : "<<ans<<endl;
 }
+
+// LeetCode - 136

@@ -8,7 +8,7 @@ void Sort_0s_and_1s(int arr[] , int n)
     int onecount = 0;
 
     //counting
-    for(int i=0;i<n;i++)
+    for(int i = 0; i < n; i++)
     {
         if(arr[i] == 0)
             zerocount++;
@@ -18,15 +18,19 @@ void Sort_0s_and_1s(int arr[] , int n)
 
     //Insertion
     int i = 0;
-    for(i;i<zerocount;i++)
+    for(i; i < zerocount; i++)
     {
         arr[i] = 0;
     }
 
-    for(i;i<n;i++)
+    for(i; i < n; i++)
     {
         arr[i] = 1;
     }
+
+    // Can also use fill function
+    // fill(arr, arr + zerocount, 0);
+    // fill(arr + zerocount, arr + n, 1);
 
 }
 
@@ -36,8 +40,9 @@ int main()
     int size2 = 8;
 
     cout<<"Sorted 0s & 1s using sort function : ";
-    sort(arr2,arr2+size2); // TC --> O(n logn)
-    for(int i = 0;i<size2;i++)
+    sort(arr2, arr2+size2); // TC --> O(n logn)
+
+    for(int i = 0; i < size2; i++)
     {
         cout<<arr2[i];
     }
@@ -49,3 +54,5 @@ int main()
         cout<<arr2[i];
     }
 }
+
+// LeetCode - 75

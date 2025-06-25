@@ -48,7 +48,7 @@ void TwoSumPrintAllPairs(int arr[] , int n , int target)
         {
             if(arr[i] + arr[j] == target)
             {
-                cout<<arr[i]<<","<<arr[j]<<endl;
+                cout<<"("<<arr[i]<<","<<arr[j]<<")"<<endl;
             }
         }
     }
@@ -63,7 +63,7 @@ int main()
 
     bool ans = TwoSum(arr,size,target);
     if(ans == true)
-        cout<<"The Pair exists in the Array\n";
+        cout<<"\nThe Pair exists in the Array\n";
     else
         cout<<"The Pair does NOT exists in the Array"<<endl;
 
@@ -77,8 +77,11 @@ int main()
         cout<<"Pair FOUND : "<<anspair.first<<","<<anspair.second<<endl;
     }
 
-    cout<<"Printing All Pairs with Target Value : "<<endl;
+    cout<<"\nPrinting All Pairs with Target Value : "<<endl;
     TwoSumPrintAllPairs(arr,size,target);
 
     return 0;
 }
+
+
+// LeetCode - 1.

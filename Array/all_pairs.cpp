@@ -8,7 +8,7 @@ void printAllPairs(int arr[] , int n)
         // for every i , we are looping variable j from start to end
         for(int j = 0;j<n;j++)
         {
-            cout<<arr[i]<<","<<arr[j]<<endl;
+            cout<<"("<<arr[i]<<","<<arr[j]<<")"<<endl;
         }
     }
 }
@@ -19,7 +19,8 @@ void variation_1(int arr[] , int n)
     {
         for(int j = i;j<n;j++)
         {
-            cout<<arr[i]<<","<<arr[j]<<endl;
+            cout<<"("<<arr[i]<<","<<arr[j]<<")"<<endl;
+
         }
     }
 }
@@ -30,7 +31,8 @@ void variation_2(int arr[] , int n)
     {
         for(int j=0;j<i;j++)
         {
-            cout<<arr[i]<<","<<arr[j]<<endl;
+            cout<<"("<<arr[i]<<","<<arr[j]<<")"<<endl;
+
         }
     }
 }
@@ -41,7 +43,7 @@ void variation_3(int arr[] , int n)
     {
         for(int j=0;j<=i;j++)
         {
-            cout<<arr[i]<<","<<arr[j]<<endl;
+            cout<<"("<<arr[i]<<","<<arr[j]<<")"<<endl;
         }
     }
 }
@@ -52,7 +54,7 @@ void variation_4(int arr[] , int n)
     {
         for(int j=n-1;j>=0;j--)
         {
-            cout<<arr[i]<<","<<arr[j]<<endl;
+            cout<<"("<<arr[i]<<","<<arr[j]<<")"<<endl;
         }
     }
 }
@@ -63,7 +65,7 @@ void variation_5(int arr[] , int n)
     {
         for(int j=n-1;j>i;j--)
         {
-            cout<<arr[i]<<","<<arr[j]<<endl;
+            cout<<"("<<arr[i]<<","<<arr[j]<<")"<<endl;
         }
     }
 }

@@ -30,23 +30,31 @@ void rotateArray(int arr[], int n, int shift) {
 
 }
 
-int main() {
-    int arr[] = {10,20,30,40,50,60};
-    int size = 6;
-    int shift = 4; // Cyclically Rotate the Array by 2 places
+// int main() {
+//     int arr[] = {10,20,30,40,50,60};
+//     int size = 6;
+//     int shift = 4; // Cyclically Rotate the Array by 2 places
     
-    cout<<"\nBefore Shifting : \n";
-    for(int i = 0; i < size ; i++)
-    {
-        cout<<arr[i]<<" ";
-    }
+//     cout<<"\nBefore Shifting : \n";
+//     for(int i = 0; i < size ; i++)
+//     {
+//         cout<<arr[i]<<" ";
+//     }
     
-    rotateArray(arr,size,shift);
+//     rotateArray(arr,size,shift);
 
-    cout<<"\n\nAfter Shifting : \n";
-    for(int i = 0; i < size ; i++)
-    {
-        cout<<arr[i]<<" ";
-    }
+//     cout<<"\n\nAfter Shifting : \n";
+//     for(int i = 0; i < size ; i++)
+//     {
+//         cout<<arr[i]<<" ";
+//     }
+//     return 0;
+// }
+
+
+int main() {
+
+
+
     return 0;
 }

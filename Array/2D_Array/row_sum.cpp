@@ -42,6 +42,17 @@ void DiagonalSum(int arr[][4] , int row)
     cout<<sum<<endl;
 }
 
+void SecondDiagonalSum(int arr[][4] , int row)
+{
+    int sum = 0;
+
+    for(int i = 0; i < row; i++)
+    {
+        sum = sum + arr[i][2 - i];
+    }
+    cout<<sum<<endl;
+}
+
 
 int main()
 {
@@ -54,14 +65,17 @@ int main()
     int rowSize = 3;
     int colSize = 4;
 
-    cout<<"Row Sum : "<<endl;
+    cout<<"\nRow Sum : "<<endl;
     RowSum(arr,rowSize,colSize);
 
     cout<<"\nColumn Sum : "<<endl;
     ColSum(arr,rowSize,colSize);
 
-    cout<<"\nDiagonal Sum : "<<endl;
+    cout<<"\nDiagonal Sum : ";
     DiagonalSum(arr,rowSize);
+
+    cout<<"\nSecond Diagonal Sum : ";
+    SecondDiagonalSum(arr,rowSize);
 
     return 0;
 }

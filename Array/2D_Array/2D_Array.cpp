@@ -16,7 +16,7 @@ int main()
     int row = 3;
     int col = 3;
 
-    cout<<"Printing 2D ARRAY Elements ROW WISE : "<<endl;
+    cout<<"\n2D ARRAY Elements ROW WISE : "<<endl;
     for(int i = 0; i < row; i++)
     {
         for(int j = 0; j < col; j++)
@@ -26,7 +26,7 @@ int main()
         cout<<endl;
     }
 
-    cout<<"Printing 2D ARRAY Elements COLUMN WISE : "<<endl;
+    cout<<"\n2D ARRAY Elements COLUMN WISE : "<<endl;
     for(int j = 0; j < col; j++)
     {
         for(int i = 0; i < row; i++)
@@ -37,7 +37,7 @@ int main()
     }
 
     // Diagonal Matrix --> Only SQUARE MATRIX contains Diagonals  --> with O(n^2) Time Complexity
-    cout<<"Printing Diagoanl Elements of the 2D ARRAY : "<<endl;
+    cout<<"\nDiagoanl Elements of the 2D ARRAY : "<<endl;
     for(int i = 0; i < row; i++)
     {
         for(int j = 0; j < col; j++)
@@ -49,11 +49,18 @@ int main()
     }
 
     // It can also be done easily with O(n) Time Complexity 
-    cout<<"Diagonal Elements with TC = O(n) : "<<endl;
+    cout<<"\nDiagonal Elements with TC = O(n) : "<<endl;
     for(int i = 0; i < row; i++)
     {
         cout<<arr[i][i]<<" ";
     }
+
+    cout << "\nSecondary Diagonal: \n";
+    for (int i = 0; i < row; i++) {
+        cout << arr[i][2 - i] << " ";
+    }
+    cout << endl;
+
 
     // cout<<"Printing 2D ARRAY Elements COLUMN WISE(Works for only SQUARE MATRIX) : "<<endl;
     // for(int i = 0; i < row; i++)
@@ -75,12 +82,12 @@ int main()
     {
         for(int j =0; j < c; j++)
         {
-            cout<<"\nEnter value for ("<<i<<")th Row and ("<<j<<")th Column";
+            cout<<"\n\nEnter value for ("<<i<<")th Row and ("<<j<<")th Column";
             cin>>array[i][j];
         }
     }
 
-    cout<<"Printing 2D Array : "<<endl;
+    cout<<"\nPrinting 2D Array : "<<endl;
     for(int i = 0; i < r; i++)
     {
         for(int j = 0; j < c; j++)

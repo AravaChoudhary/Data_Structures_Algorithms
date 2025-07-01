@@ -83,19 +83,49 @@ int XOR(int arr[], int n) {
 }
 
 
-int main() {
+// int main() {
 
-    int arr[] = {9,6,4,2,3,5,7,0,1};
-    int size = 9;
+//     int arr[] = {9,6,4,2,3,5,7,0,1};
+//     int size = 9;
 
-    cout<<"\nSorting Method"<<endl;  // TC --> O(nlogn)
-    cout<<"Missing Number is : ";
-    cout<<SortingMethod(arr,size)<<endl;
+//     cout<<"\nSorting Method"<<endl;  // TC --> O(nlogn)
+//     cout<<"Missing Number is : ";
+//     cout<<SortingMethod(arr,size)<<endl;
 
-    cout<<"\nOptimezed Approach"<<endl; // TC --> O(n)
-    cout<<"Missing Number is : ";
-    cout<<XOR(arr,size)<<endl;
-    return 0;
+//     cout<<"\nOptimezed Approach"<<endl; // TC --> O(n)
+//     cout<<"Missing Number is : ";
+//     cout<<XOR(arr,size)<<endl;
+//     return 0;
 
+//     return 0;
+// }
+
+int ReturnUnique(int arr[], int n) {
+
+    int i = 1, j = 0;
+
+    while(i < n) {
+        
+        if(arr[i] == arr[j])
+            i++;
+        else {
+            j++;
+            arr[j] = arr[i];
+            i++;
+        }
+    }
+
+    return j + 1;
+}
+
+int main()
+{
+    int arr[] = {0,0,1,1,1,2,2,3,3,4};
+    int size = 10;
+
+    cout<<"\nTWO POINTER Approach\n";
+    cout<<"Number of Unique Elements : ";
+    cout<<ReturnUnique(arr,size)<<endl;
+    
     return 0;
 }

@@ -4,7 +4,7 @@ using namespace std;
 
 int ReturnUnique(int arr[] , int n)
 {
-    int i = 1 , j = 0;
+    int i = 1, j = 0;
 
     while(i < n)
     {
@@ -13,6 +13,7 @@ int ReturnUnique(int arr[] , int n)
         else
             arr[++j] = arr[i++];
     }
+
     return j + 1;
 }
 
@@ -24,5 +25,8 @@ int main()
     cout<<"\nTWO POINTER Approach\n";
     cout<<"Number of Unique Elements : ";
     cout<<ReturnUnique(arr,size)<<endl;
+
     return 0;
 }
+
+// LeetCode - 26.

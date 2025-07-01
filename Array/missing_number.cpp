@@ -20,7 +20,7 @@ int SortingMethod(int arr[] , int n)
 int XOR(int arr[] , int n)
     {
         int ans = 0;
-        // 1) XOR all array values of nums[i]
+        // 1) XOR all array values of arr[i]
         for(int i =0; i < n; i++)
         {
             ans ^= arr[i];
@@ -48,3 +48,5 @@ int main()
     cout<<XOR(arr,size)<<endl;
     return 0;
 }
+
+// LeetCode - 268.

@@ -118,14 +118,70 @@ int ReturnUnique(int arr[], int n) {
     return j + 1;
 }
 
+double bruteforce(int arr[], int n, int k) {
+
+    int max_sum = INT_MIN;
+    int i = 0, j = k - 1;
+
+    while(j < n) {
+
+        int sum = 0;
+
+        for(int y = i; y <= j; y++) {
+            sum = sum + arr[y];
+        }
+
+        max_sum = max(max_sum, sum);
+
+        i++;
+        j++;
+    }
+
+    double max_avg = double(max_sum) / k;
+    return max_avg; 
+
+}
+
+double optimized(int arr[], int n, int k) {
+
+    int sum = 0;
+    int i = 0, j = k - 1;
+
+    for(int y = i; y <= j; y++) {
+        sum = sum + arr[y];
+    }
+
+    int max_sum = sum;
+    j++;
+
+
+    while(j < n) {
+
+        sum = sum - arr[i];
+        sum = sum + arr[j];
+        i++;
+        j++;
+        max_sum = max(max_sum, sum);
+    }
+
+    double maxAvg = (double)max_sum / k;
+    return maxAvg;
+
+}
+
+
 int main()
 {
-    int arr[] = {0,0,1,1,1,2,2,3,3,4};
-    int size = 10;
+    int arr[] = {1,12,-5,-6,50,3};
+    int size = 5 , k = 4;
 
-    cout<<"\nTWO POINTER Approach\n";
-    cout<<"Number of Unique Elements : ";
-    cout<<ReturnUnique(arr,size)<<endl;
-    
+    cout<<"\nBrute Force Approach"<<endl;  // TC --> O(nlogn)
+    cout<<"Max Average is : ";
+    cout<<bruteforce(arr,size,k)<<endl;
+
+    cout<<"\nOptimezed Approach"<<endl; // TC --> O(n)
+    cout<<"Max Average is : ";
+    cout<<optimized(arr,size,k)<<endl;
+
     return 0;
 }

@@ -170,18 +170,87 @@ double optimized(int arr[], int n, int k) {
 }
 
 
+// int main()
+// {
+//     int arr[] = {1,12,-5,-6,50,3};
+//     int size = 5 , k = 4;
+
+//     cout<<"\nBrute Force Approach"<<endl;  // TC --> O(nlogn)
+//     cout<<"Max Average is : ";
+//     cout<<bruteforce(arr,size,k)<<endl;
+
+//     cout<<"\nOptimezed Approach"<<endl; // TC --> O(n)
+//     cout<<"Max Average is : ";
+//     cout<<optimized(arr,size,k)<<endl;
+
+//     return 0;
+// }
+
+
+int CountingMethod(int arr[], int n) {
+
+    int ones, zeros, twos;
+    zeros = ones = twos = 0;
+
+    for(int i = 0; i < n; i++) {
+
+        if(arr[i] == 0)
+            zeros++;
+        else if(arr[i] == 1)
+            ones++;
+        else
+            twos++;
+    }
+
+    // Inserting 
+    int idx = 0;
+    while(zeros--) {
+        arr[idx] = 0;
+        idx++;
+    }
+
+    while(ones--) {
+        arr[idx] = 1;
+        idx++;
+    }
+
+    while(twos--) {
+        arr[idx] = 2;
+        idx++;
+    }
+
+}
+
+int  ThreePtrApproach(int arr[],int n) {
+
+}
+
+
 int main()
 {
-    int arr[] = {1,12,-5,-6,50,3};
-    int size = 5 , k = 4;
+    int n, arr[50];
+    cout<<"\nEnter the Size of the Array : ";
+    cin>>n;
 
-    cout<<"\nBrute Force Approach"<<endl;  // TC --> O(nlogn)
-    cout<<"Max Average is : ";
-    cout<<bruteforce(arr,size,k)<<endl;
+    cout<<"\nEnter the Array Elements : \n";
+    for(int i = 0; i < n; i++)
+    {
+        cin>>arr[i];
+    }
 
-    cout<<"\nOptimezed Approach"<<endl; // TC --> O(n)
-    cout<<"Max Average is : ";
-    cout<<optimized(arr,size,k)<<endl;
+    cout<<"\nCounting Method"<<endl;
+    CountingMethod(arr,n);
+    for(int i = 0; i < n; i++)
+    {
+        cout<<arr[i]<<" ";
+    } cout<<endl;
+
+    cout<<"\nThree Pointer Approach"<<endl;
+    ThreePtrApproach(arr,n);
+    for(int i = 0; i < n; i++)
+    {
+        cout<<arr[i]<<" ";
+    } cout<<endl;
 
     return 0;
 }

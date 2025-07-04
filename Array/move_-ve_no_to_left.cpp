@@ -9,16 +9,11 @@ void moveNegative(int arr[] , int n)
     while(l < h)
     {
         if(arr[l] < 0)
-        {
             l++;
-        }
         else if(arr[h] > 0)
-        {
             h--;
-        }
-        else {
+        else
             swap(arr[l] , arr[h]);
-        }
     }
 }
 

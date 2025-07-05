@@ -290,6 +290,35 @@ int moveNegative(int arr[], int n) {
     }
 }
 
+// int main()
+// {
+//     int n, arr[50];
+//     cout<<"\nEnter the Size of the Array : ";
+//     cin>>n;
+
+//     cout<<"\nEnter the Array Elements : \n";
+//     for(int i = 0; i < n; i++)
+//     {
+//         cin>>arr[i];
+//     }
+
+//     cout<<"\nArray after Shifting -VE Numbers in the left"<<endl;
+//     moveNegative(arr,n);
+//     for(int i = 0; i < n ; i++)
+//     {
+//         cout<<arr[i]<<" ";
+//     } cout<<endl;
+
+//     return 0;
+// }
+
+
+int bruteforce(int arr[], int n) {
+
+    sort(arr, arr + n);
+}
+
+
 int main()
 {
     int n, arr[50];
@@ -302,12 +331,12 @@ int main()
         cin>>arr[i];
     }
 
-    cout<<"\nArray after Shifting -VE Numbers in the left"<<endl;
-    moveNegative(arr,n);
-    for(int i = 0; i < n ; i++)
-    {
-        cout<<arr[i]<<" ";
-    } cout<<endl;
+    cout<<"Brute Force Approach\nThe Duplicate Number is : "<<bruteforce(arr,n)<<endl; // TC --< O(nlogn) , SC --> O(n) 
+
+    // cout<<"Optimezed Approach Approach\nThe Duplicate Number is : "<<NegativeMarkingSolution(arr,n)<<endl; // TC --< O(n) , SC --> O(1)
+
+    // cout<<"Without Modifying Array Approach\nThe Duplicate Number is : "<<CorrectPositionMethod(arr)<<endl;
+    
 
     return 0;
 }

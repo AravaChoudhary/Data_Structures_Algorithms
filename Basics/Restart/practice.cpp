@@ -316,6 +316,42 @@ int moveNegative(int arr[], int n) {
 int bruteforce(int arr[], int n) {
 
     sort(arr, arr + n);
+
+    for(int i = 0; i < n - 1; i++) {
+
+        if(arr[i] == arr[i + 1])
+            return arr[i];
+    }
+
+    return -1;
+}
+
+int NegativeMarkingSolution(int arr[], int n) {
+
+    int ans = -1;
+
+    for(int i = 0; i < n; i++) {
+
+        int idx = abs(arr[i]);
+
+        if(arr[idx] < 0) {
+            ans = idx;
+            break;
+        }
+
+        arr[idx] = arr[idx] * (-1);
+    }
+
+    return ans;
+}
+
+int CorrectPositionMethod(int arr[]) {
+
+    while(arr[0] != arr[arr[0]]) {
+        swap(arr[0], arr[arr[0]]);
+    }
+
+    return arr[0];
 }
 
 
@@ -331,11 +367,11 @@ int main()
         cin>>arr[i];
     }
 
-    cout<<"Brute Force Approach\nThe Duplicate Number is : "<<bruteforce(arr,n)<<endl; // TC --< O(nlogn) , SC --> O(n) 
+    // cout<<"Brute Force Approach\nThe Duplicate Number is : "<<bruteforce(arr,n)<<endl; // TC --< O(nlogn) , SC --> O(n) 
 
     // cout<<"Optimezed Approach Approach\nThe Duplicate Number is : "<<NegativeMarkingSolution(arr,n)<<endl; // TC --< O(n) , SC --> O(1)
 
-    // cout<<"Without Modifying Array Approach\nThe Duplicate Number is : "<<CorrectPositionMethod(arr)<<endl;
+    cout<<"Without Modifying Array Approach\nThe Duplicate Number is : "<<CorrectPositionMethod(arr)<<endl;
     
 
     return 0;

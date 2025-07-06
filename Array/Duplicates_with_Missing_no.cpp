@@ -12,13 +12,12 @@ void Duplicates_with_Missing_no(int *arr , int n)
             // Mark as Visited
             arr[idx - 1] = arr[idx - 1] * (-1);
        }
+    }
 
-       for(int i = 0; i < n; i++)
-       {
+    for(int i = 0; i < n; i++)
+    {
         if(arr[i] > 0)
             cout<<i + 1<<" ";
-       }
-       
     }
 }
 
@@ -34,8 +33,8 @@ int main()
         cin>>arr[i];
     }
 
+    cout<<"\nMissing Numbers is/are : ";
     Duplicates_with_Missing_no(arr , n);
-
 
     return 0;
 }

@@ -187,7 +187,7 @@ double optimized(int arr[], int n, int k) {
 // }
 
 
-int CountingMethod(int arr[], int n) {
+void CountingMethod(int arr[], int n) {
 
     int ones, zeros, twos;
     zeros = ones = twos = 0;
@@ -221,7 +221,7 @@ int CountingMethod(int arr[], int n) {
 
 }
 
-int  ThreePtrApproach(int arr[],int n) {
+void ThreePtrApproach(int arr[],int n) {
     int l,m,h;
     l = m = 0, h = n - 1;
 
@@ -275,7 +275,7 @@ int  ThreePtrApproach(int arr[],int n) {
 // }
 
 
-int moveNegative(int arr[], int n) {
+void moveNegative(int arr[], int n) {
 
     int l = 0, h = n - 1;
 
@@ -355,6 +355,46 @@ int CorrectPositionMethod(int arr[]) {
 }
 
 
+// int main()
+// {
+//     int n, arr[50];
+//     cout<<"\nEnter the Size of the Array : ";
+//     cin>>n;
+
+//     cout<<"\nEnter the Array Elements : \n";
+//     for(int i = 0; i < n; i++)
+//     {
+//         cin>>arr[i];
+//     }
+
+//     // cout<<"Brute Force Approach\nThe Duplicate Number is : "<<bruteforce(arr,n)<<endl; // TC --< O(nlogn) , SC --> O(n) 
+
+//     // cout<<"Optimezed Approach Approach\nThe Duplicate Number is : "<<NegativeMarkingSolution(arr,n)<<endl; // TC --< O(n) , SC --> O(1)
+
+//     cout<<"Without Modifying Array Approach\nThe Duplicate Number is : "<<CorrectPositionMethod(arr)<<endl;
+    
+
+//     return 0;
+// }
+
+
+void Duplicates_with_Missing_no(int arr[], int n) {
+
+    for(int i = 0; i < n; i++) {
+
+        int idx = abs(arr[i]);
+
+        if(arr[idx - 1] > 0) {
+            arr[idx - 1] = arr[idx - 1] * (-1);
+        }
+    }
+
+    for(int i = 0; i < n; i++) {
+        if(arr[i] > 0)
+            cout<<i + 1<<" ";
+    }
+}
+
 int main()
 {
     int n, arr[50];
@@ -367,12 +407,8 @@ int main()
         cin>>arr[i];
     }
 
-    // cout<<"Brute Force Approach\nThe Duplicate Number is : "<<bruteforce(arr,n)<<endl; // TC --< O(nlogn) , SC --> O(n) 
-
-    // cout<<"Optimezed Approach Approach\nThe Duplicate Number is : "<<NegativeMarkingSolution(arr,n)<<endl; // TC --< O(n) , SC --> O(1)
-
-    cout<<"Without Modifying Array Approach\nThe Duplicate Number is : "<<CorrectPositionMethod(arr)<<endl;
-    
+    cout<<"\nMissing Numbers is/are : ";
+    Duplicates_with_Missing_no(arr , n);
 
     return 0;
 }

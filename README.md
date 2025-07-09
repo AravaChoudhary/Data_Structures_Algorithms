@@ -4,7 +4,7 @@ Welcome to my Data Structures and Algorithms (DSA) repository! This repository i
 
 ##### •  Solutions to various DSA problems
 ##### •  Implementations of core Data Structures and Algorithms
-##### •  Code written primarily in C++ and also doing in Python on LeetCode .
+##### •  Code written primarily in C++ and also doing in Python.
 
 My goal is to develop strong foundations in DSA by practicing and sharing solutions while continuously improving my problem-solving approach.
 

@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 
 using namespace std;
 
@@ -42,5 +43,6 @@ int main()
     cin>>target;
 
     cout<<"Element Found at : "<<BinarySearch(arr,target)<<endl;
+
     return 0;
 }

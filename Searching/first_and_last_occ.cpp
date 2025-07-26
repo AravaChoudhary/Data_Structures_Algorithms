@@ -62,13 +62,13 @@ int main()
     int lastIdx = -1;
 
     first_occurence(arr,n,target,firstIdx);
-    cout<<"First Occurence Index : "<<firstIdx<<endl;
+    cout<<"\nFirst Occurence Index : "<<firstIdx<<endl;
 
     last_occurence(arr,n,target,lastIdx);
-    cout<<"Last Occurence Index : "<<lastIdx<<endl;
+    cout<<"\nLast Occurence Index : "<<lastIdx<<endl;
 
     int total_occurence = lastIdx - firstIdx + 1;
-    cout<<"Total Occurence : "<<total_occurence<<endl;
+    cout<<"\nTotal Occurence : "<<total_occurence<<endl;
 
     return 0;
 }

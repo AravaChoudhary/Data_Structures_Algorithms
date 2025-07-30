@@ -3,6 +3,24 @@
 
 using namespace std;
 
+int BinarySearch(int s , int l, int target , vector<int> arr) {
+    while(s <= l) {
+        int mid = s + (l - s) / 2;
+
+        if(target == arr[mid]) {
+            return mid;
+        }
+        if(target > arr[mid]) {
+            s = mid + 1;
+        }
+        else {
+            l = mid - 1;
+        }
+    }
+
+    return -1;
+}
+
 int getpivotIndex(vector<int>& arr) {
     int n = arr.size();
     int s = 0;
@@ -27,23 +45,6 @@ int getpivotIndex(vector<int>& arr) {
     return -1;
 }
 
-int BinarySearch(int s , int l, int target , vector<int> arr) {
-    while(s <= l) {
-        int mid = s + (l - s) / 2;
-
-        if(target == arr[mid]) {
-            return mid;
-        }
-        if(target > arr[mid]) {
-            s = mid + 1;
-        }
-        else {
-            l = mid - 1;
-        }
-    }
-
-    return -1;
-}
 
 int main()
 {

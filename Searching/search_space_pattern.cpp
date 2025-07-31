@@ -31,6 +31,7 @@ int Sqrt_with_0_precision(int x) {
     return ans;
 }
 
+
 double Sqrt_with_more_digit_precision(int x) {
 
     // Time Complexity --> O(log n) + O(Precision)
@@ -110,7 +111,7 @@ int main()
     cout<<"Enter the Number : ";
     cin>>n;
 
-    cout<<"Square root with 0 Precision is : "<<Sqrt_with_0_precision(n)<<endl;
+    cout<<"\nSquare root with 0 Precision is : "<<Sqrt_with_0_precision(n)<<endl;
     cout<<"\nAccurate Square root : "<<Sqrt_with_more_digit_precision(n)<<endl;
 
     // here for printing more than 6 pricision , we have to use printf()

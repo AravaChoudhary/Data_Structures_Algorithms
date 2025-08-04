@@ -56,9 +56,10 @@ int main()
     cout<<"Enter Divisor : ";
     cin>>divisor;
 
+    // Target is to find the Quotient
     cout<<"Answer is : "<<divide(dividend,divisor)<<endl;
 
     return 0;
 }
 
-// LeetCode --> 29
+// LeetCode --> 29.

@@ -13,7 +13,7 @@ int getQuotient(int dividend, int divisor) {
 
     while(s <= l) {
 
-        int mid = s + ((l - s) >> 1);
+        int mid = s + ((l - s) >> 1); // Used Right Shift because not allowed to use '/' and '%'
 
         if(divisor * mid == dividend)
             return mid;

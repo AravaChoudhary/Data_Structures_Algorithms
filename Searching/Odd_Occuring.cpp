@@ -22,6 +22,10 @@ int FindOddOccuring(vector<int> arr, int n) {
     while(s <= l) {
         mid = s + (l - s) / 2;
 
+        cout<<"mid : "<<mid<<endl;
+        cout<<"arr[mid] : "<<arr[mid]<<endl;
+        cout<<"s = "<<s<<" l = "<<l<<endl;
+
         if(s == l) // If there is only a single element in the Array then 
             return s; // return index of that element only.
 

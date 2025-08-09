@@ -98,7 +98,7 @@ int main() {
     }
 
     ans_bs = FindOddOccuring(arr, n); // Returns Index
-    cout<<"\nOdd Occuring Element in the Array is : "<<ans_bs<<endl;
+    cout<<"\nOdd Occuring Index in the Array is : "<<ans_bs<<endl;
 
     ans_o = Optimized(arr, n); // Returns Element
     cout<<"\nOdd Occuring Element in the Array is : "<<ans_o<<endl;

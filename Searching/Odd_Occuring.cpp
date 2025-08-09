@@ -54,10 +54,36 @@ int FindOddOccuring(vector<int> arr, int n) {
 
 }
 
+int Optimized(vector<int>& arr, int n) {
+
+    int s, l, mid;
+    s = 0;
+    l = n - 1;
+
+    while (s < l) {
+        int mid = s + (l - s) / 2;
+
+            // Ensure mid is even for easier pair comparison
+        if (mid % 2 == 1) {
+            mid--;
+        }
+
+        if (arr[mid] == arr[mid + 1]) {
+            // Unique element is in the right half
+            s = mid + 2;
+        } else {
+            // Unique element is in the left half (including mid)
+            l = mid;
+        }
+    }
+
+        return arr[s];
+}
+
 int main() {
 
     vector<int> arr;
-    int n , ans;
+    int n , ans_bs, ans_o;
 
     cout<<"SEARCHING IN A NEARLY SORTED ARRAY"<<endl;
 
@@ -71,8 +97,11 @@ int main() {
         arr.push_back(value);
     }
 
-    ans = FindOddOccuring(arr, n);
-    cout<<"\nOdd Occuring Element in the Array is : "<<ans<<endl;
+    ans_bs = FindOddOccuring(arr, n); // Returns Index
+    cout<<"\nOdd Occuring Element in the Array is : "<<ans_bs<<endl;
+
+    ans_o = Optimized(arr, n); // Returns Element
+    cout<<"\nOdd Occuring Element in the Array is : "<<ans_o<<endl;
 
     return 0;
 }

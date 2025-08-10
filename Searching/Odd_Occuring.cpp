@@ -27,14 +27,25 @@ int FindOddOccuring(vector<int> arr, int n) {
         cout<<"s = "<<s<<" l = "<<l<<endl;
 
         if(s == l) // If there is only a single element in the Array then 
-            return s; // return index of that element only.
+            return arr[s]; // return index of that element only.
+
+        int current_value = arr[mid];  // Value at mid index
+        int left_value = -1;  // Value at mid - 1 index , if exists
+        int right_value = -1;  // Value at mid + 1 index , if exists
+
+        if(mid - 1 >= 0)
+            left_value = arr[mid - 1];
+
+        if(mid + 1 < n)
+            right_value = arr[mid + 1];
+
 
         //  CASE 1 : Duplicate does not exists.
-        if(arr[mid] != arr[mid - 1] and arr[mid] != arr[mid + 1])
-            return mid;
+        if(current_value != left_value and current_value != right_value)
+            return current_value;
 
         // CASE 2 : Duplicate exists in the Left Index.
-        if(arr[mid] == arr[mid - 1]) {
+        if(current_value == left_value) {
             int pairStartingIdx = mid - 1;
             if(pairStartingIdx & 1) // pairStartingIdx is odd and i am standing at right part
                 // Move towards left
@@ -45,7 +56,7 @@ int FindOddOccuring(vector<int> arr, int n) {
         }
 
         // CASE 3 : Duplicate exits in the Right Index.
-        else if(arr[mid] == arr[mid + 1]) {
+        else if(current_value == right_value) {
             int pairStartingIdx = mid;
             if(pairStartingIdx & 1) // pairStartingIdx is odd and i am standing at right part
                 // Move towards left
@@ -102,7 +113,7 @@ int main() {
     }
 
     ans_bs = FindOddOccuring(arr, n); // Returns Index
-    cout<<"\nOdd Occuring Index in the Array is : "<<ans_bs<<endl;
+    cout<<"\nOdd Occuring Element in the Array is : "<<ans_bs<<endl;
 
     ans_o = Optimized(arr, n); // Returns Element
     cout<<"\nOdd Occuring Element in the Array is : "<<ans_o<<endl;

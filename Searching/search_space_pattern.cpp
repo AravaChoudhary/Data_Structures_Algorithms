@@ -115,8 +115,8 @@ int main()
     cout<<"\nAccurate Square root : "<<Sqrt_with_more_digit_precision(n)<<endl;
 
     // here for printing more than 6 pricision , we have to use printf()
-    double ans = Sqrt_with_more_digit_precision(n);
     printf("Using Printf");
+    double ans = Sqrt_with_more_digit_precision(n);
     printf("\nAnswer is : %.13f",ans);
     
 

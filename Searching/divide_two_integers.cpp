@@ -8,18 +8,18 @@ long long BinarySearch(long long dividend , long long divisor) {
         long long int ans = 0;
 
         while(s <= l) {
-            long long int mid = s + (l - s) / 2;
+            long long int mid = s + (l - s) >> 1;
 
             // Is the answer mid ?
             if(mid * divisor <= dividend) {
                 ans = mid;
-                s = mid +1;
+                s = mid + 1;
             }
 
-            else {
+            else
                 l = mid - 1;
-            }
         }
+         
         return ans; 
     }
 

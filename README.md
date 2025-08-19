@@ -16,6 +16,7 @@ Topics Under Progress:
 ### 🔎 Searching
 	•	Linear Search
 	•	Binary Search
+  • Sorting
 	•	LeetCode Problems
   •	GfG Problems
 
@@ -25,6 +26,7 @@ Topics Under Progress:
     •	Arrays
     •	Array Related LeetCode Problems
     •	STL (Standard Template Library)
+    • Binary Search and Linear Search
 
 
 ## 📚 Learning Resource

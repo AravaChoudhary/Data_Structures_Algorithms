@@ -13,10 +13,9 @@ My goal is to develop strong foundations in DSA by practicing and sharing soluti
 I am currently focusing on solving LeetCode Problems to practice and refine my problem-solving skills.
 
 Topics Under Progress:
-## 🔎 Searching
-	•	Linear Search
-	•	Binary Search
-  • Sorting
+## 🔎 Sorting
+	•	Selection Sort
+	•	Insertion Sort
 	•	LeetCode Problems
   •	GfG Problems
 

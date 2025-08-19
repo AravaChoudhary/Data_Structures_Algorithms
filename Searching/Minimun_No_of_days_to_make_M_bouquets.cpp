@@ -14,14 +14,14 @@ bool can_we_make_m_bouquets_in_D_days(vector<int>& bloomDay, int m, int k, int D
         if(bloomDay[i] <= D) // It must have bloomed
             counter++;
         
-            if(counter == k) { // I can make a bouquet
+        if(counter == k) { // I can make a bouquet
                 
-                m--;
-                counter = 0;
+            m--;
+            counter = 0;
 
-                if(m == 0)
-                    break;
-            }
+            if(m == 0)
+                break;
+        }
 
             if(bloomDay[i] > D)
                 counter = 0;

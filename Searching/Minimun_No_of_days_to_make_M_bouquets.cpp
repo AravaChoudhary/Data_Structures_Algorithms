@@ -23,8 +23,8 @@ bool can_we_make_m_bouquets_in_D_days(vector<int>& bloomDay, int m, int k, int D
                 break;
         }
 
-            if(bloomDay[i] > D)
-                counter = 0;
+        if(bloomDay[i] > D)
+            counter = 0;
     }
 
     return m == 0;

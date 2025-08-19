@@ -13,7 +13,7 @@ My goal is to develop strong foundations in DSA by practicing and sharing soluti
 I am currently focusing on solving LeetCode Problems to practice and refine my problem-solving skills.
 
 Topics Under Progress:
-### 🔎 Searching
+## 🔎 Searching
 	•	Linear Search
 	•	Binary Search
   • Sorting
@@ -26,7 +26,7 @@ Topics Under Progress:
     •	Arrays
     •	Array Related LeetCode Problems
     •	STL (Standard Template Library)
-    • Binary Search and Linear Search
+    •	Binary Search and Linear Search
 
 
 ## 📚 Learning Resource

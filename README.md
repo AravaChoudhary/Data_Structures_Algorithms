@@ -23,7 +23,7 @@ Topics Under Progress:
     •	Arrays
     •	Array Related LeetCode Problems
     •	STL (Standard Template Library)
-    •	Binary Search and Linear Search
+    •	Binary Search & Linear Search 
 
 
 ## 📚 Learning Resource

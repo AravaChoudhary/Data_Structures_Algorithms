@@ -75,7 +75,7 @@ int main() {
     return 0;
 }
 
-// Time Complexity -> O(words * pattern)
-// Space Complexity -> O(pattern)
+// Time Complexity -> O( words * pattern )
+// Space Complexity -> O( pattern )
 
 // LeetCode - 890.

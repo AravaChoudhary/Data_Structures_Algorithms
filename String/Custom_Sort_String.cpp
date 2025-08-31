@@ -34,7 +34,7 @@ int main() {
     cout<<"\nEnter s : ";
     getline(cin, s);
 
-    cout<<"\nDecoded Message is : "<<customSortString(order, s)<<endl;
+    cout<<"\nAnswer String : "<<customSortString(order, s)<<endl;
     
     return 0;
 

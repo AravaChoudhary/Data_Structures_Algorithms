@@ -15,7 +15,7 @@ I am currently focusing on solving LeetCode Problems to practice and refine my p
 Topics Under Progress:
 ## 🔎 Pointers
 	•	GfG Problems
-	•	LeetCode Problems
+	•	LeetCode Prolems
   •	Binary Search Problems
   •	String Problems
 

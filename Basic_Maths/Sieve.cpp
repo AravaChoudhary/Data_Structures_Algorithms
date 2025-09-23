@@ -123,6 +123,8 @@ int main() {
     return 0;
 }
 
+// Complexities
+
 // Normal Sieve
 // 	•	Time: O(n log log n)
 // 	•	Space: O(n)

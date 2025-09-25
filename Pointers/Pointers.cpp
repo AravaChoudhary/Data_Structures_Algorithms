@@ -41,5 +41,6 @@ int main() {
     // cout<<*ptrg<<endl;
 
     int *ptr = 0;   // Null Pointer
+    
     return 0;
 }

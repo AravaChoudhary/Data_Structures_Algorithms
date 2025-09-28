@@ -6,7 +6,6 @@ int main() {
 
     cout<<"\nPointers"<<endl;
 
-
     // // int a = 5;
     // // cout<<a<<endl;
 

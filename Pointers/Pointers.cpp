@@ -4,6 +4,8 @@ using namespace std;
 
 int main() {
 
+    cout<<"\nPointers"<<endl;
+
 
     // // int a = 5;
     // // cout<<a<<endl;
@@ -13,8 +15,6 @@ int main() {
 
     // // // int c = &a;
     // // // cout<<c<<endl;
-
-    // cout<<"\nPointers"<<endl;
 
     // // int *ptr = &a;
     // // cout<<a<<endl;

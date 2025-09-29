@@ -41,5 +41,4 @@ I am following the book [Grokking Algorithms: An Illustrated Guide for Programme
   <img  align=top flex-grow=1 src="https://leetcard.jacoblin.cool/AravaChoudhary?theme=dark&font=Nunito&ext=heatmap" />  
 </p>
 
-
 ### 🧑🏻‍💻 GFG Profile : [GeeksforGeeks](https://www.geeksforgeeks.org/user/aravachoudhary/)

@@ -29,13 +29,66 @@ bool SearchArray(int arr[], int size, int index, int target) {
 }
 
 
+void Maxiumum_in_Array(int arr[], int size, int index, int &max_element) {
 
+    // Base Case
+    if(index == size)
+        return ;
+
+    // Recursive Call
+    // Ek case mera
+    max_element = max(max_element, arr[index]);
+    // Baaki sab Recursion karega
+    Maxiumum_in_Array(arr, size, index + 1, max_element); 
+}
+
+
+void Minimum_in_Array(int arr[], int size, int index, int &min_element) {
+
+    // Base Case
+    if(index == size)
+        return ;
+
+    // Recursive Call
+    // Ek case mera
+    min_element = min(min_element, arr[index]);
+    // Baaki sab Recursion karega
+    Minimum_in_Array(arr, size, index + 1, min_element); 
+}
+
+
+void printAllOdds(int arr[], int size, int index) {
+
+    // Base Case
+    if(index == size)   
+        return ;
+
+    if(arr[index] & 1)
+        cout << arr[index] << " ";
+
+    // Recursive Call
+    printAllOdds(arr, size, index + 1);
+}
+
+
+void printAllEvens(int arr[], int size, int index) {
+
+    // Base Case
+    if(index == size)   
+        return ;
+
+    if((arr[index] % 2) == 0)
+        cout << arr[index] << " ";
+
+    // Recursive Call
+    printAllEvens(arr, size, index + 1);
+}
 
 
 int main() {
 
-    int arr[] = {10, 20, 30, 40, 50, 60};
-    int size = 6;
+    int arr[] = {11, 20, 35, 40, 50, 67, -34, 564};
+    int size = 8;
     int index = 0;    // Start printing from this index
 
     cout<<"\nArray : ";
@@ -51,5 +104,20 @@ int main() {
     else
         cout<<"\nTarget FOUND\n";
 
+
+    int max_element = INT_MIN;
+    Maxiumum_in_Array(arr, size, index, max_element);
+    cout<<"\nMaximum Element of the Array is "<<max_element<<endl;
+
+    int min_element = INT_MAX;
+    Minimum_in_Array(arr, size, index, min_element);
+    cout<<"\nMinimum Element of the Array is "<<min_element<<endl;
+
+    cout<<"\nPrinting All Odds"<<endl;
+    printAllOdds(arr, size, index);
+
+    cout<<"\nPrinting All Evens"<<endl;
+    printAllEvens(arr, size, index);
+ 
     return 0;
 }

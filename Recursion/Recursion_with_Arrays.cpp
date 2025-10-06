@@ -84,6 +84,26 @@ void printAllEvens(int arr[], int size, int index) {
     printAllEvens(arr, size, index + 1);
 }
 
+int BinarySearchRecursive(int arr[], int n, int start, int end, int target) {
+
+    // Base Case
+    if(start > end) // NOT Found
+        return -1;
+
+    int mid = start + (end - start) / 2;
+
+    // 1 case Mera
+    if(arr[mid] == target)
+        return mid;
+
+    // Baaki Recursion Solve karega
+    if(target > arr[mid])    // Go to Right
+        return BinarySearchRecursive(arr, n, mid + 1, end, target);
+
+    else    // Go to Left
+        return BinarySearchRecursive(arr, n, start, mid - 1, target);
+}
+
 
 int main() {
 
@@ -100,9 +120,9 @@ int main() {
     cin>>target;
     bool ans = SearchArray(arr,size, index, target);
     if(ans == 0)
-        cout<<"\nTarget NOT FOUND\n";
+        cout<<"Target NOT FOUND\n";
     else
-        cout<<"\nTarget FOUND\n";
+        cout<<"Target FOUND\n";
 
 
     int max_element = INT_MIN;
@@ -119,5 +139,13 @@ int main() {
     cout<<"\nPrinting All Evens"<<endl;
     printAllEvens(arr, size, index);
  
+    cout<<"\n\nBinary Search"<<endl;
+    int ans_bs = BinarySearchRecursive(arr, size, index, size - 1, target);
+    if(ans_bs == -1)
+        cout<<"Target NOT FOUND\n";
+    else
+        cout<<"Target FOUND at index "<<ans_bs<<"\n";
+
+
     return 0;
 }

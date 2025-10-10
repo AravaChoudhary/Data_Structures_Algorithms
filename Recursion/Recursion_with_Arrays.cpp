@@ -105,6 +105,28 @@ int BinarySearchRecursive(int arr[], int n, int start, int end, int target) {
 }
 
 
+bool CheckSorted(int arr[], int n, int index) {
+
+    // Base Case
+    if(index == n - 1)
+        return true;    //Single Element Array is treated as Sorted
+
+    // 1 Case Solve karne hai
+    bool my_ans = false;
+    if(arr[index + 1] > arr[index])
+        my_ans = true;
+    
+    // baaki Recursion karega
+    bool recursion_ans = false;
+    recursion_ans = CheckSorted(arr, n, index + 1);
+
+    if(my_ans == true and recursion_ans == true)
+        return true;
+    else
+        return false;
+}
+
+
 int main() {
 
     int arr[] = {11, 20, 35, 40, 50, 67, -34, 564};
@@ -144,8 +166,16 @@ int main() {
     if(ans_bs == -1)
         cout<<"Target NOT FOUND\n";
     else
-        cout<<"Target FOUND at index "<<ans_bs<<"\n";
+        cout<<"Target FOUND at index "<<ans_bs<<endl;
 
+
+    int arr_2[] = {10, 20, 30, 40, 50};
+    int size_2 = 5;
+    bool ans_2 = CheckSorted(arr_2, size_2, index);
+    if(ans_2 == 1)
+        cout<<"\nArray is Sorted\n";
+    else
+        cout<<"\nArray is NOT Sorted\n";
 
     return 0;
 }

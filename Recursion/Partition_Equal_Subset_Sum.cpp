@@ -63,7 +63,7 @@ int main() {
     return 0;
 }
 
-// Done with the Recursion Approach - Time Complexity can be improved using Dynamic Programming Approach.
+// Done with the Recursive Approach - Time Complexity can be improved using Dynamic Programming Approach.
 
 // Time Complexity -> O(2^n)
 // Space Complexity -> O(n)

@@ -149,3 +149,6 @@ int main() {
 |----------|-----------|---------|----------------|
 | **Sieve of Eratosthenes** | Small to medium `n` | O(n) | `n ≤ 10⁷` |
 | **Segmented Sieve** | Large ranges | O(√R + (R−L+1)) | `[10⁹, 10⁹ + 10⁶]` |
+
+
+### 🧑🏻‍💻 LeetCode Discuss : [LeetCode Discuss](https://leetcode.com/discuss/post/7341800/sieve-of-eratosthenes-and-segmented-siev-yrwk/)
